@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="iLibras.ExplicaPage"
+    Title="iLibras Explica"
+    Padding="10">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Image Source="icongif.png" HorizontalOptions="Start"/>
+                <Label Text="Digite o termo a ser pesquisado para obter o resultado correspondente em Libras" HorizontalOptions="StartAndExpand"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Image Source="iconcontexto.png" HorizontalOptions="Start"/>
+                <Label Text="Digite o termo a ser pesquisado para obter o resultado correspondente do contexto" HorizontalOptions="StartAndExpand"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Image Source="iconimg.png" HorizontalOptions="Start"/>
+                <Label Text="Digite o termo a ser pesquisado para obter o resultado correspondente da imagem representativa do termo" HorizontalOptions="StartAndExpand"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Image Source="iconescritasinais.png" HorizontalOptions="Start"/>
+                <Label Text="Digite o termo a ser pesquisado para obter o resultado correspondente da escrita de sinais" HorizontalOptions="StartAndExpand"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

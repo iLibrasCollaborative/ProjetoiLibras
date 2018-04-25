@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="iLibras.UsuarioItemPage">
+    <StackLayout>
+        <Entry x:Name="etyEmail" Placeholder="Email" Text="{Binding Email}" Keyboard="Email"/>
+        <Entry x:Name="etySenha" Placeholder="Senha" Text="{Binding Senha}" IsPassword="true"/>
+        <Entry x:Name="etyConfirmarSenha" Placeholder="Confirmar senha" Text="{Binding Senha}" IsPassword="true"/>
+        <Entry x:Name="etyNome" Placeholder="Nome" Text="{Binding Nome}"/>
+        <DatePicker x:Name="pckData" />
+        <Picker x:Name="pckEstado" Title="Estado" />
+        <Button x:Name="btnSalvar" Text="Salvar" Clicked="onSalvarClickedAsync"/>
+        <Button x:Name="btnCancelar" Text="Cancelar" Clicked="onCancelarClickedAsync"/>
+    </StackLayout>
+</ContentPage>

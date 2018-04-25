@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="iLibras.NivelPerfilItemPage"
+    Padding="10"
+    Title="Alterar nivel do perfil"
+    Appearing="Handle_Appearing"
+    Disappearing="Handle_Disappearing">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="✓" Command="{Binding SalvarPerfilCommand}">
+            <ToolbarItem.Icon>
+                <OnPlatform x:TypeArguments="FileImageSource">
+                    <On Platform="Android" Value="check.png" />
+                </OnPlatform>
+            </ToolbarItem.Icon>
+        </ToolbarItem>
+    </ContentPage.ToolbarItems>
+    
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Email:"/>
+            <Entry x:Name="etyEmail" Placeholder="Email" Keyboard="Email" IsEnabled="false"/>
+            <Label Text="Nome:"/>
+            <Entry x:Name="etyNome" Placeholder="Nome" IsEnabled="false"/>
+            <Label Text="Data nascimento:"/>
+            <DatePicker x:Name="pckData" Format="dd/MM/yyyy" IsEnabled="false"/>
+            <Label Text="Estado:"/>
+            <Picker x:Name="pckEstado" Title="Estado" IsEnabled="false"/>
+            <Label Text="Perfil:"/>
+            <Picker x:Name="pckPerfil" Title="Perfil"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

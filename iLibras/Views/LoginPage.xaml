@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="iLibras.LoginPage"
+    Title="Login"
+    Appearing="Handle_Appearing">
+    <StackLayout HorizontalOptions="Center">
+        <Image Source="logo150.png" HorizontalOptions="Center" VerticalOptions="Start"/>
+        <StackLayout VerticalOptions="StartAndExpand">
+            <Entry x:Name="etyLogin" Placeholder="Email" MinimumWidthRequest="200" 
+                   WidthRequest="220" Keyboard="Email"/>
+            <StackLayout Orientation="Horizontal">
+                <Entry x:Name="etySenha" IsPassword="true" Placeholder="Senha" 
+                       MinimumWidthRequest="200" WidthRequest="220"/>
+                <Image Source="eye24.png" HorizontalOptions="End" VerticalOptions="Center">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Handle_Tapped" NumberOfTapsRequired="1" />
+                    </Image.GestureRecognizers>
+                </Image>
+            </StackLayout>
+            <Label Text="Esqueci minha senha">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding RecuperarSenhaCommand}" NumberOfTapsRequired="1" />
+                </Label.GestureRecognizers>
+            </Label>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Lembrar-me"/>
+                <Switch x:Name="swtLembrar"/>
+            </StackLayout>
+            <Button Text="Entrar" x:Name="btnLogin" BackgroundColor="Blue" 
+                    FontAttributes="Bold" TextColor="White" Margin="10,15,10,10"
+                    Command="{Binding LoginCommand}"/>
+            <Label Text="ou" TextColor="Gray" HorizontalOptions="Center"/>
+            <Button Text="Cria conta com e-mail" x:Name="btnCadastrar" BorderColor="Blue" 
+                BorderWidth="2" BackgroundColor="White" TextColor="Blue" 
+                Margin="10,10,10,15" Command="{Binding NovaContaCommand}"/>    
+        </StackLayout>
+        </StackLayout>
+</ContentPage>

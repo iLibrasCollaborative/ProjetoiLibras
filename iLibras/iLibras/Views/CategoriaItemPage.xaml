@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="iLibras.CategoriaItemPage"
+    Disappearing="Handle_Disappearing">
+    <StackLayout>
+        <Entry x:Name="etyCodigo" Placeholder="Código" IsEnabled="false" IsVisible="false" Text="{Binding Codigo}"/>
+        <Entry x:Name="etyCategoria" Placeholder="Categoria" Text="{Binding Descricao}"/>
+        <Button x:Name="btnSalvar" Text="Salvar" Command="{Binding SalvarCategoriaCommand}" HorizontalOptions="Center" WidthRequest="150"/>
+        <Button x:Name="btnDeletar" Text="Deletar" Command="{Binding DeletarCategoriaCommand}" IsVisible="false" HorizontalOptions="Center" WidthRequest="150"/>
+    </StackLayout>
+</ContentPage>

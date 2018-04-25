@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="using:iLibras"
+             x:Class="iLibras.MasterPage"
+             Icon="hamburger.png"
+             Title="iLibras">
+    <StackLayout>
+        <StackLayout BackgroundColor="#1577d2" Orientation="Vertical" Padding="10, 0, 10, 10"> 
+            <StackLayout HorizontalOptions="Start">
+                <Image Source="user48.png"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+                <StackLayout HorizontalOptions="StartAndExpand">
+                    <Label Text="Você não está logado ainda." TextColor="White" x:Name="lblUsuario"/>
+                </StackLayout>
+                <StackLayout HorizontalOptions="End">
+                    <Label Text="Login" TextColor="White" x:Name="lblLogin"/>
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+        <ListView x:Name="listView" SeparatorVisibility="None" IsVisible="false">
+           <ListView.ItemsSource>
+                <x:Array Type="{x:Type local:MasterPageItem}">
+                    <local:MasterPageItem
+                        Title="Inicio" 
+                        IconSource="iconhome.png" 
+                        TargetType="{x:Type local:HomePage}" 
+                        Background="White"/>
+                    <local:MasterPageItem
+                        Title="GIF Libras" 
+                        IconSource="icongif.png" 
+                        TargetType="{x:Type local:HomePage}" 
+                        Index="1"
+                        Background="White"/>
+                    <local:MasterPageItem
+                        Title="Contexto" 
+                        IconSource="iconcontexto.png" 
+                        TargetType="{x:Type local:HomePage}" 
+                        Index="2"
+                        Background="White"/>
+                    <local:MasterPageItem
+                        Title="Imagem Representativa" 
+                        IconSource="iconimg.png" 
+                        TargetType="{x:Type local:HomePage}" 
+                        Index="3"
+                        Background="White"/>
+                    <local:MasterPageItem
+                        Title="Escrita em Sinais" 
+                        IconSource="iconescritasinais.png" 
+                        TargetType="{x:Type local:HomePage}" 
+                        Index="4"
+                        Background="White"/>
+                    <local:MasterPageItem
+                        Title="iLibras Explica" 
+                        IconSource="iconexplica.png" 
+                        TargetType="{x:Type local:ExplicaPage}" 
+                        Background="White"/>
+                    <local:MasterPageItem
+                        Title="Atribui Perfil" 
+                        TargetType="{x:Type local:NivelPerfilPage}" 
+                        Background="White"/>
+                    <local:MasterPageItem
+                        Title="Categoria" 
+                        TargetType="{x:Type local:CategoriaPage}" 
+                        Background="White"/>
+                    <local:MasterPageItem
+                        Title="Tag"
+                        TargetType="{x:Type local:TagPage}" 
+                        Background="White"/>
+                    <local:MasterPageItem
+                        Title="Regionalismo"
+                        TargetType="{x:Type local:RegionalismoPage}" 
+                        Background="White"/>
+                    <local:MasterPageItem 
+                        Title="Enviar iLibras" 
+                        TargetType="{x:Type local:HomePage}" 
+                        Background="White"
+                        Acao="receber"/>
+                    <local:MasterPageItem 
+                        Title="Receber iLibras" 
+                        TargetType="{x:Type local:HomePage}" 
+                        Background="White"
+                        Acao="enviar"/>
+                    <local:MasterPageItem 
+                        Title="Sair" 
+                        TargetType="{x:Type local:HomePage}" 
+                        Background="White"
+                        Acao="sair"/>
+                </x:Array>
+            </ListView.ItemsSource>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid Padding="5,5" BackgroundColor="{Binding Background}">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="30"/>
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Image Source="{Binding IconSource}" />
+                            <Label Grid.Column="1" Text="{Binding Title}" />
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <ListView x:Name="listViewCoordenador" SeparatorVisibility="None" IsVisible="false">
+           <ListView.ItemsSource>
+                <x:Array Type="{x:Type local:MasterPageItem}">
+                    <local:MasterPageItem
+                        Title="Inicio" 
+                        IconSource="iconhome.png" 
+                        TargetType="{x:Type local:HomePage}" 
+                        Background="White"/>
+                    <local:MasterPageItem
+                        Title="GIF Libras" 
+                        IconSource="icongif.png" 
+                        TargetType="{x:Type local:HomePage}" 
+                        Index="1"
+                        Background="White"/>
+                    <local:MasterPageItem
+                        Title="Contexto" 
+                        IconSource="iconcontexto.png" 
+                        TargetType="{x:Type local:HomePage}" 
+                        Index="2"
+                        Background="White"/>
+                    <local:MasterPageItem
+                        Title="Imagem Representativa" 
+                        IconSource="iconimg.png" 
+                        TargetType="{x:Type local:HomePage}" 
+                        Index="3"
+                        Background="White"/>
+                    <local:MasterPageItem
+                        Title="Escrita em Sinais" 
+                        IconSource="iconescritasinais.png" 
+                        TargetType="{x:Type local:HomePage}" 
+                        Index="4"
+                        Background="White"/>
+                    <local:MasterPageItem
+                        Title="iLibras Explica" 
+                        IconSource="iconexplica.png" 
+                        TargetType="{x:Type local:ExplicaPage}" 
+                        Background="White"/>
+                    <local:MasterPageItem
+                        Title="Atribui Perfil" 
+                        TargetType="{x:Type local:NivelPerfilPage}" 
+                        Background="White"/>
+                    <local:MasterPageItem
+                        Title="Categoria" 
+                        TargetType="{x:Type local:CategoriaPage}" 
+                        Background="White"/>
+                    <local:MasterPageItem
+                        Title="Tag"
+                        TargetType="{x:Type local:TagPage}" 
+                        Background="White"/>
+                    <local:MasterPageItem
+                        Title="Regionalismo"
+                        TargetType="{x:Type local:RegionalismoPage}" 
+                        Background="White"/>
+                    <local:MasterPageItem 
+                        Title="Enviar iLibras" 
+                        TargetType="{x:Type local:HomePage}" 
+                        Background="White"
+                        Acao="receber"/>
+                    <local:MasterPageItem 
+                        Title="Receber iLibras" 
+                        TargetType="{x:Type local:HomePage}" 
+                        Background="White"
+                        Acao="enviar"/>
+                    <local:MasterPageItem 
+                        Title="Sair" 
+                        TargetType="{x:Type local:HomePage}" 
+                        Background="White"
+                        Acao="sair"/>
+                </x:Array>
+            </ListView.ItemsSource>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid Padding="5,5" BackgroundColor="{Binding Background}">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="30"/>
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Image Source="{Binding IconSource}" />
+                            <Label Grid.Column="1" Text="{Binding Title}" />
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <ListView x:Name="listViewComunicador" SeparatorVisibility="None" IsVisible="true">
+           <ListView.ItemsSource>
+                <x:Array Type="{x:Type local:MasterPageItem}">
+                    <local:MasterPageItem
+                        Title="Inicio" 
+                        IconSource="iconhome.png" 
+                        TargetType="{x:Type local:HomePage}" 
+                        Background="White"/>
+                    <local:MasterPageItem
+                        Title="GIF Libras" 
+                        IconSource="icongif.png" 
+                        TargetType="{x:Type local:HomePage}" 
+                        Index="1"
+                        Background="White"/>
+                    <local:MasterPageItem
+                        Title="Contexto" 
+                        IconSource="iconcontexto.png" 
+                        TargetType="{x:Type local:HomePage}" 
+                        Index="2"
+                        Background="White"/>
+                    <local:MasterPageItem
+                        Title="Imagem Representativa" 
+                        IconSource="iconimg.png" 
+                        TargetType="{x:Type local:HomePage}" 
+                        Index="3"
+                        Background="White"/>
+                    <local:MasterPageItem
+                        Title="Escrita em Sinais" 
+                        IconSource="iconescritasinais.png" 
+                        TargetType="{x:Type local:HomePage}" 
+                        Index="4"
+                        Background="White"/>
+                    <local:MasterPageItem
+                        Title="iLibras Explica" 
+                        IconSource="iconexplica.png" 
+                        TargetType="{x:Type local:ExplicaPage}" 
+                        Background="White"/>
+                    <local:MasterPageItem
+                        Title="Regionalismo"
+                        TargetType="{x:Type local:RegionalismoPage}" 
+                        Background="White"/>
+                    <local:MasterPageItem 
+                        Title="Enviar iLibras" 
+                        TargetType="{x:Type local:HomePage}" 
+                        Background="White"
+                        Acao="receber"/>
+                    <local:MasterPageItem 
+                        Title="Receber iLibras" 
+                        TargetType="{x:Type local:HomePage}" 
+                        Background="White"
+                        Acao="enviar"/>
+                    <local:MasterPageItem 
+                        Title="Sair" 
+                        TargetType="{x:Type local:HomePage}" 
+                        Background="White"
+                        Acao="sair"/>
+                </x:Array>
+            </ListView.ItemsSource>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid Padding="5,5" BackgroundColor="{Binding Background}">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="30"/>
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Image Source="{Binding IconSource}" />
+                            <Label Grid.Column="1" Text="{Binding Title}" />
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <ListView x:Name="listViewCooperador" SeparatorVisibility="None" IsVisible="false">
+           <ListView.ItemsSource>
+                <x:Array Type="{x:Type local:MasterPageItem}">
+                    <local:MasterPageItem
+                        Title="Inicio" 
+                        IconSource="iconhome.png" 
+                        TargetType="{x:Type local:HomePage}" 
+                        Background="White"/>
+                    <local:MasterPageItem
+                        Title="GIF Libras" 
+                        IconSource="icongif.png" 
+                        TargetType="{x:Type local:HomePage}" 
+                        Index="1"
+                        Background="White"/>
+                    <local:MasterPageItem
+                        Title="Contexto" 
+                        IconSource="iconcontexto.png" 
+                        TargetType="{x:Type local:HomePage}" 
+                        Index="2"
+                        Background="White"/>
+                    <local:MasterPageItem
+                        Title="Imagem Representativa" 
+                        IconSource="iconimg.png" 
+                        TargetType="{x:Type local:HomePage}" 
+                        Index="3"
+                        Background="White"/>
+                    <local:MasterPageItem
+                        Title="Escrita em Sinais" 
+                        IconSource="iconescritasinais.png" 
+                        TargetType="{x:Type local:HomePage}" 
+                        Index="4"
+                        Background="White"/>
+                    <local:MasterPageItem
+                        Title="iLibras Explica" 
+                        IconSource="iconexplica.png" 
+                        TargetType="{x:Type local:ExplicaPage}" 
+                        Background="White"/>
+                    <local:MasterPageItem
+                        Title="Atribui Perfil" 
+                        TargetType="{x:Type local:NivelPerfilPage}" 
+                        Background="White"/>
+                    <local:MasterPageItem
+                        Title="Categoria" 
+                        TargetType="{x:Type local:CategoriaPage}" 
+                        Background="White"/>
+                    <local:MasterPageItem
+                        Title="Tag"
+                        TargetType="{x:Type local:TagPage}" 
+                        Background="White"/>
+                    <local:MasterPageItem
+                        Title="Regionalismo"
+                        TargetType="{x:Type local:RegionalismoPage}" 
+                        Background="White"/>
+                    <local:MasterPageItem 
+                        Title="Enviar iLibras" 
+                        TargetType="{x:Type local:HomePage}" 
+                        Background="White"
+                        Acao="receber"/>
+                    <local:MasterPageItem 
+                        Title="Receber iLibras" 
+                        TargetType="{x:Type local:HomePage}" 
+                        Background="White"
+                        Acao="enviar"/>
+                    <local:MasterPageItem 
+                        Title="Sair" 
+                        TargetType="{x:Type local:HomePage}" 
+                        Background="White"
+                        Acao="sair"/>
+                </x:Array>
+            </ListView.ItemsSource>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid Padding="5,5" BackgroundColor="{Binding Background}">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="30"/>
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Image Source="{Binding IconSource}" />
+                            <Label Grid.Column="1" Text="{Binding Title}" />
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>

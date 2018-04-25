@@ -1,0 +1,18 @@
+﻿<Properties StartupConfiguration="{18F00B0D-B584-4295-8AE1-B31A44ABDAB0}|Default">
+  <MonoDevelop.Ide.ItemProperties.iLibras.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.12D44F12-0421-494A-A1C8-39447A1ACED8" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="iLibras/Views/UsuarioItemPage.xaml.cs">
+    <Files>
+      <File FileName="iLibras/Views/UsuarioItemPage.xaml" Line="6" Column="18" />
+      <File FileName="iLibras/Views/LoginPage.xaml" Line="14" Column="16" />
+      <File FileName="iLibras/Views/CategoriaPage.xaml" Line="10" Column="20" />
+      <File FileName="iLibras/Views/UsuarioItemPage.xaml.cs" Line="13" Column="35" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.iLibras.Droid PreferredExecutionTarget="Android.0036008590" />
+  <MultiItemStartupConfigurations />
+</Properties>

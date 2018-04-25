@@ -1,0 +1,9 @@
+/Users/freitas/Projects/Jobs/SimoneApp/iLibras/Droid/obj/Debug/iLibras.csproj.CoreCompileInputs.cache
+/Users/freitas/Projects/Jobs/SimoneApp/iLibras/Droid/obj/Debug/iLibras.Droid.App.xaml.g.cs
+/Users/freitas/Projects/Jobs/SimoneApp/iLibras/Droid/obj/Debug/iLibras.Droid.Views.HomePage.xaml.g.cs
+/Users/freitas/Projects/Jobs/SimoneApp/iLibras/Droid/obj/Debug/iLibras.Droid.Views.LoginPage.xaml.g.cs
+/Users/freitas/Projects/Jobs/SimoneApp/iLibras/Droid/obj/Debug/iLibras.Droid.Views.UsuarioPage.xaml.g.cs
+/Users/freitas/Projects/Jobs/SimoneApp/iLibras/Droid/obj/Debug/iLibras.Droid.Views.MasterPage.xaml.g.cs
+/Users/freitas/Projects/Jobs/SimoneApp/iLibras/Droid/obj/Debug/iLibras.Droid.Views.MainPage.xaml.g.cs
+/Users/freitas/Projects/Jobs/SimoneApp/iLibras/Droid/obj/Debug/iLibras.Droid.dll
+/Users/freitas/Projects/Jobs/SimoneApp/iLibras/Droid/obj/Debug/iLibras.Droid.pdb

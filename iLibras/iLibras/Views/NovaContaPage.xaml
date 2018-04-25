@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="iLibras.NovaContaPage"
+    Title="Nova conta"
+    Padding="20,20,20,0">
+    <StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Nome"/>
+            <Entry x:Name="etyNome" Placeholder="Nome"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Email"/>
+            <Entry x:Name="etyEmail" Placeholder="Email" Keyboard="Email"/>    
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Data Nascimento" Margin="0,15,0,0"/>
+            <DatePicker x:Name="pckDataNascimento" Format="dd/MM/yyyy"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Perfil" Margin="0,15,0,0"/>
+            <Picker x:Name="pckPerfil" Title="Perfil"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Estado" Margin="0,15,0,0"/>
+            <Picker x:Name="pckEstado" Title="Estado"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Telefone"/>
+            <Entry 
+                x:Name="etyTelefone" 
+                Placeholder="Telefone" 
+                Keyboard="Telephone"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Senha"/>
+            <Entry x:Name="etySenha" Placeholder="Senha" IsPassword="true"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Confirmar senha"/>
+            <Entry 
+                x:Name="etySenhaConf" 
+                Placeholder="Confirmar senha" 
+                IsPassword="true"/>
+        </StackLayout>
+        <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+            <Button
+                Text="Cadastrar"             
+                BackgroundColor="Blue" 
+                FontAttributes="Bold" 
+                TextColor="White"
+                WidthRequest="200" />
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

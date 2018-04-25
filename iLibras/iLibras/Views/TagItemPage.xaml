@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="iLibras.TagItemPage"
+    Title="Tag"
+    Disappearing="Handle_Disappearing"
+    Appearing="Handle_Appearing">
+    <StackLayout>
+        <Entry x:Name="etyCodigo" Placeholder="Código" IsVisible="false" IsEnabled="false"/>
+        <Entry x:Name="etyDescricao" Placeholder="Descrição"/>
+        <Picker x:Name="pckCategoria" Title="Categoria"/>
+        <Button x:Name="btnSalvar" Text="Salvar" Command="{Binding SalvarTagCommand}" HorizontalOptions="Center" WidthRequest="150"/>
+        <Button x:Name="btnDeletar" Text="Deletar" Command="{Binding DeletarTagCommand}" IsVisible="false" HorizontalOptions="Center" WidthRequest="150"/>
+    </StackLayout>
+</ContentPage>

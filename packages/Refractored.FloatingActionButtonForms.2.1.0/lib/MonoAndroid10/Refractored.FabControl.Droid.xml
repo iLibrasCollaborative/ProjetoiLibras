@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Refractored.FabControl.Droid</name>
+    </assembly>
+    <members>
+        <member name="M:Refractored.FabControl.Droid.FloatingActionButtonViewRenderer.Init">
+            <summary>
+            Used for registration with dependency service
+            </summary>
+        </member>
+        <member name="M:Refractored.FabControl.Droid.FloatingActionButtonViewRenderer.#ctor">
+            <summary>
+            Construtor
+            </summary>
+        </member>
+        <member name="M:Refractored.FabControl.Droid.FloatingActionButtonViewRenderer.OnElementChanged(Xamarin.Forms.Platform.Android.ElementChangedEventArgs{Refractored.FabControl.FloatingActionButtonView})">
+            <summary>
+            Element Changed
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Refractored.FabControl.Droid.FloatingActionButtonViewRenderer.Show(System.Boolean)">
+            <summary>
+            Show
+            </summary>
+            <param name="animate"></param>
+        </member>
+        <member name="M:Refractored.FabControl.Droid.FloatingActionButtonViewRenderer.Hide(System.Boolean)">
+            <summary>
+            Hide!
+            </summary>
+            <param name="animate"></param>
+        </member>
+    </members>
+</doc>

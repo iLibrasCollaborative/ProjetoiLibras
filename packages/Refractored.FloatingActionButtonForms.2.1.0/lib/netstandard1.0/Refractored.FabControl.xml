@@ -1,0 +1,141 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Refractored.FabControl</name>
+    </assembly>
+    <members>
+        <member name="T:Refractored.FabControl.FloatingActionButtonSize">
+            <summary>
+            Size of FAB
+            </summary>
+        </member>
+        <member name="F:Refractored.FabControl.FloatingActionButtonSize.Normal">
+            <summary>
+            Normal size
+            </summary>
+        </member>
+        <member name="F:Refractored.FabControl.FloatingActionButtonSize.Mini">
+            <summary>
+            Mini size
+            </summary>
+        </member>
+        <member name="T:Refractored.FabControl.FloatingActionButtonView">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:Refractored.FabControl.FloatingActionButtonView.ImageNameProperty">
+            <summary>
+            Gets the image name property
+            </summary>
+        </member>
+        <member name="P:Refractored.FabControl.FloatingActionButtonView.ImageName">
+            <summary>
+            Gets or sets the image name from the source (ic_icon.png) for instance
+            </summary>
+        </member>
+        <member name="F:Refractored.FabControl.FloatingActionButtonView.ColorNormalProperty">
+            <summary>
+            Gets the color normal property
+            </summary>
+        </member>
+        <member name="P:Refractored.FabControl.FloatingActionButtonView.ColorNormal">
+            <summary>
+            Gets or sets the color of the button
+            </summary>
+        </member>
+        <member name="F:Refractored.FabControl.FloatingActionButtonView.ColorPressedProperty">
+            <summary>
+            Gets the color pressed property
+            </summary>
+        </member>
+        <member name="P:Refractored.FabControl.FloatingActionButtonView.ColorPressed">
+            <summary>
+            Gets or sets the color pressed property
+            </summary>
+        </member>
+        <member name="F:Refractored.FabControl.FloatingActionButtonView.ColorRippleProperty">
+            <summary>
+            Gets the ripple color property
+            </summary>
+        </member>
+        <member name="P:Refractored.FabControl.FloatingActionButtonView.ColorRipple">
+            <summary>
+            Gets or sets the ripple color of the floating action button
+            </summary>
+        </member>
+        <member name="F:Refractored.FabControl.FloatingActionButtonView.SizeProperty">
+            <summary>
+            Gets the size property of the floating action button
+            </summary>
+        </member>
+        <member name="P:Refractored.FabControl.FloatingActionButtonView.Size">
+            <summary>
+            Gets or sets the floating action button size
+            </summary>
+        </member>
+        <member name="F:Refractored.FabControl.FloatingActionButtonView.HasShadowProperty">
+            <summary>
+            Gets the has shadow property
+            </summary>
+        </member>
+        <member name="P:Refractored.FabControl.FloatingActionButtonView.HasShadow">
+            <summary>
+            Gets or sets the has shadow property
+            </summary>
+        </member>
+        <member name="F:Refractored.FabControl.FloatingActionButtonView.CommandProperty">
+            <summary>
+            Gets the command property
+            </summary>
+        </member>
+        <member name="F:Refractored.FabControl.FloatingActionButtonView.CommandParameterProperty">
+            <summary>
+            Gets the command 
+            </summary>
+        </member>
+        <member name="P:Refractored.FabControl.FloatingActionButtonView.Command">
+            <summary>
+            Gets or sets the command to execute when clicked
+            </summary>
+        </member>
+        <member name="P:Refractored.FabControl.FloatingActionButtonView.CommandParameter">
+            <summary>
+            Gets or sets the command parameter
+            </summary>
+        </member>
+        <member name="M:Refractored.FabControl.FloatingActionButtonView.CommandCanExecuteChanged(System.Object,System.EventArgs)">
+            <summary>
+            Executes if enabled or not based on can execute changed
+            </summary>
+            <param name="sender"></param>
+            <param name="eventArgs"></param>
+        </member>
+        <member name="T:Refractored.FabControl.FloatingActionButtonView.ShowHideDelegate">
+            <summary>
+            Show Hide Delegate
+            </summary>
+            <param name="animate"></param>
+        </member>
+        <member name="T:Refractored.FabControl.FloatingActionButtonView.AttachToListViewDelegate">
+            <summary>
+            Attach to list view delegate
+            </summary>
+            <param name="listView"></param>
+        </member>
+        <member name="P:Refractored.FabControl.FloatingActionButtonView.Show">
+            <summary>
+            Show the control
+            </summary>
+        </member>
+        <member name="P:Refractored.FabControl.FloatingActionButtonView.Hide">
+            <summary>
+            Hide the control
+            </summary>
+        </member>
+        <member name="P:Refractored.FabControl.FloatingActionButtonView.Clicked">
+            <summary>
+            Action to call when clicked
+            </summary>
+        </member>
+    </members>
+</doc>

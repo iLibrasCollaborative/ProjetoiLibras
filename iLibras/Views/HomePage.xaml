@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms" 
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+            xmlns:fab="clr-namespace:Refractored.FabControl;assembly=Refractored.FabControl"
+            x:Class="iLibras.HomePage"
+            Title="iLibras"
+            BarBackgroundColor="White">
+    <ContentPage Icon="icongif.png" x:Name="gifPage">
+        <StackLayout>
+            <SearchBar Placeholder="Pesquisar GIF em libras"/>
+            <fab:FloatingActionButtonView
+                ImageName="plus_fab.png"
+                ColorNormal=""
+                ColorRipple="Red"
+                x:Name="FloatingActionButtonAdd"
+                HorizontalOptions="EndAndExpand"
+                VerticalOptions="EndAndExpand"
+                IsVisible="true"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds="1, 1, AutoSize, AutoSize"/>
+        </StackLayout>
+    </ContentPage>
+    <ContentPage Icon="iconcontexto.png" x:Name="contextPage">
+        <StackLayout>
+            <SearchBar Placeholder="Pesquisar contexto do termo"/>
+            <fab:FloatingActionButtonView
+                ImageName="plus_fab.png"
+                ColorNormal=""
+                ColorRipple="Red"
+                x:Name="FloatingActionButtonAdd"
+                HorizontalOptions="EndAndExpand"
+                VerticalOptions="EndAndExpand"
+                IsVisible="true"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds="1, 1, AutoSize, AutoSize"/>
+        </StackLayout>
+    </ContentPage>
+    <ContentPage Icon="iconimg.png" x:Name="imgPage">
+        <StackLayout>
+            <SearchBar Placeholder="Pesquisar imagem representativa"/>
+            <fab:FloatingActionButtonView
+                ImageName="plus_fab.png"
+                ColorNormal=""
+                ColorRipple="Red"
+                x:Name="FloatingActionButtonAdd"
+                HorizontalOptions="EndAndExpand"
+                VerticalOptions="EndAndExpand"
+                IsVisible="true"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds="1, 1, AutoSize, AutoSize"/>
+        </StackLayout>
+    </ContentPage>
+    <ContentPage Icon="iconescritasinais.png" x:Name="sinalPage">
+        <StackLayout>
+            <SearchBar Placeholder="Pesquisar escrita de sinais"/>
+            <fab:FloatingActionButtonView
+                ImageName="plus_fab.png"
+                ColorNormal=""
+                ColorRipple="Red"
+                x:Name="FloatingActionButtonAdd"
+                HorizontalOptions="EndAndExpand"
+                VerticalOptions="EndAndExpand"
+                IsVisible="true"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds="1, 1, AutoSize, AutoSize"/>
+        </StackLayout>
+    </ContentPage>
+</TabbedPage >

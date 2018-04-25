@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="using:iLibras"
+             x:Class="iLibras.MasterPage"
+             Icon="hamburger.png"
+             Title="iLibras">
+    <StackLayout>
+        <StackLayout BackgroundColor="#1577d2" Orientation="Vertical" Padding="10, 0, 10, 10"> 
+            <StackLayout HorizontalOptions="Start">
+                <Image Source="iconperfil.png"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+                <StackLayout HorizontalOptions="StartAndExpand">
+                    <Label Text="Você não está logado ainda." TextColor="White"/>
+                </StackLayout>
+                <StackLayout HorizontalOptions="End">
+                    <Label Text="Login" TextColor="White" x:Name="lblLogin"/>
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+        <ListView x:Name="listView">
+           <ListView.ItemsSource>
+                <x:Array Type="{x:Type local:MasterPageItem}">
+                    <local:MasterPageItem 
+                        Title="Inicio" 
+                        IconSource="iconhome.png" 
+                        TargetType="{x:Type local:HomePage}" 
+                        Background="White"/>
+                    <local:MasterPageItem 
+                        Title="Atribui Perfil" 
+                        TargetType="{x:Type local:NivelPerfilPage}" 
+                        Background="White"/>
+                    <local:MasterPageItem 
+                        Title="Categoria" 
+                        TargetType="{x:Type local:CategoriaPage}" 
+                        Background="White"/>
+                    <local:MasterPageItem 
+                        Title="Tag" 
+                        TargetType="{x:Type local:TagPage}" 
+                        Background="White"/>
+                    <local:MasterPageItem 
+                        Title="Enviar iLibras" 
+                        TargetType="{x:Type local:HomePage}" 
+                        Background="White"
+                        Acao="receber"/>
+                    <local:MasterPageItem 
+                        Title="Receber iLibras" 
+                        TargetType="{x:Type local:HomePage}" 
+                        Background="White"
+                        Acao="enviar"/>
+                    <local:MasterPageItem 
+                        Title="Sair" 
+                        TargetType="{x:Type local:HomePage}" 
+                        Background="White"
+                        Acao="sair"/>
+                </x:Array>
+            </ListView.ItemsSource>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid Padding="5,10" BackgroundColor="{Binding Background}">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="30"/>
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Image Source="{Binding IconSource}" />
+                            <Label Grid.Column="1" Text="{Binding Title}" />
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>
