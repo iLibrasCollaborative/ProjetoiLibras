@@ -1,0 +1,17 @@
+﻿<Properties StartupConfiguration="{18F00B0D-B584-4295-8AE1-B31A44ABDAB0}|Default">
+  <MonoDevelop.Ide.ItemProperties.iLibras.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.12D44F12-0421-494A-A1C8-39447A1ACED8" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="iLibras/Views/ForgetPassPage.xaml.cs">
+    <Files>
+      <File FileName="iLibras/Models/PasswordOptions.cs" Line="1" Column="1" />
+      <File FileName="iLibras/Views/ForgetPassPage.xaml.cs" Line="23" Column="14" />
+      <File FileName="iLibras/Views/ForgetPassPage.xaml" Line="24" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.iLibras.Droid PreferredExecutionTarget="Android.Android_Accelerated_x86" />
+  <MultiItemStartupConfigurations />
+</Properties>

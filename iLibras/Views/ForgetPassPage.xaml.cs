@@ -15,5 +15,16 @@ namespace iLibras
             this.BindingContext = new LoginViewModel();
         }
 
+        void SendEmail_Clicked(object sender, System.EventArgs e)
+        {
+            var newPassword = PasswordOptions.GenerateRandomPassword();
+
+            var email = new Email 
+            {
+                Body = "Sua nova senha é " + newPassword + "", 
+                To = etyEmail.Text,
+                Subject = "Esqueci minha senha"
+            };
+        }
     }
 }

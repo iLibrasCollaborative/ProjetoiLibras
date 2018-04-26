@@ -10,9 +10,8 @@
             <SearchBar Placeholder="Pesquisar GIF em libras"/>
             <fab:FloatingActionButtonView
                 ImageName="plus_fab.png"
-                ColorNormal=""
+                ColorNormal="#ff4d4d"
                 ColorRipple="Red"
-                x:Name="FloatingActionButtonAdd"
                 HorizontalOptions="EndAndExpand"
                 VerticalOptions="EndAndExpand"
                 IsVisible="true"
@@ -25,9 +24,8 @@
             <SearchBar Placeholder="Pesquisar contexto do termo"/>
             <fab:FloatingActionButtonView
                 ImageName="plus_fab.png"
-                ColorNormal=""
+                ColorNormal="#ff4d4d"
                 ColorRipple="Red"
-                x:Name="FloatingActionButtonAdd"
                 HorizontalOptions="EndAndExpand"
                 VerticalOptions="EndAndExpand"
                 IsVisible="true"
@@ -40,9 +38,8 @@
             <SearchBar Placeholder="Pesquisar imagem representativa"/>
             <fab:FloatingActionButtonView
                 ImageName="plus_fab.png"
-                ColorNormal=""
+                ColorNormal="#ff4d4d"
                 ColorRipple="Red"
-                x:Name="FloatingActionButtonAdd"
                 HorizontalOptions="EndAndExpand"
                 VerticalOptions="EndAndExpand"
                 IsVisible="true"
@@ -55,9 +52,8 @@
             <SearchBar Placeholder="Pesquisar escrita de sinais"/>
             <fab:FloatingActionButtonView
                 ImageName="plus_fab.png"
-                ColorNormal=""
+                ColorNormal="#ff4d4d"
                 ColorRipple="Red"
-                x:Name="FloatingActionButtonAdd"
                 HorizontalOptions="EndAndExpand"
                 VerticalOptions="EndAndExpand"
                 IsVisible="true"

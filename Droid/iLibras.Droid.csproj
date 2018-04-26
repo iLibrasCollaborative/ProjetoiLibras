@@ -210,6 +210,7 @@
     <AndroidResource Include="Resources\drawable\icongif.png" />
     <AndroidResource Include="Resources\drawable\user48.png" />
     <AndroidResource Include="Resources\drawable\plus_fab.png" />
+    <AndroidResource Include="Resources\drawable\email.png" />
   </ItemGroup>
   <Import Project="..\iLibras\iLibras.projitems" Label="Shared" Condition="Exists('..\iLibras\iLibras.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />

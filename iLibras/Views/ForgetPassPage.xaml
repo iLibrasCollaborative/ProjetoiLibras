@@ -5,6 +5,15 @@
     x:Class="iLibras.ForgetPassPage"
     Padding="10"
     Title="Recuperar senha">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Clicked="SendEmail_Clicked">
+            <ToolbarItem.Icon>
+                <OnPlatform x:TypeArguments="FileImageSource">
+                    <On Platform="Android" Value="email.png" />
+                </OnPlatform>
+            </ToolbarItem.Icon>
+        </ToolbarItem>
+    </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <StackLayout>
             <Label Text="Email:"/>

@@ -16,7 +16,9 @@
         </ToolbarItem>
     </ContentPage.ToolbarItems>
     <StackLayout>
-        <ListView x:Name="listView" Margin="20" SelectedItem="{Binding SelectedItem, Mode=TwoWay}">
+        <ListView x:Name="listView" Margin="20" SeparatorVisibility="Default" 
+                  SelectedItem="{Binding SelectedItem, Mode=TwoWay}"
+                  SeparatorColor="Black">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
