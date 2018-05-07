@@ -11,7 +11,7 @@
 namespace iLibras {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/freitas/Documents/GitHub/ProjetoiLibras2/iLibras/Views/HomePage.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/freitas/Documents/GitHub/ProjetoiLibras/iLibras/Views/HomePage.xaml")]
     public partial class HomePage : global::Xamarin.Forms.TabbedPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

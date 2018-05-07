@@ -1,24 +1,69 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Text.RegularExpressions;
 using iLibras.Models;
 using iLibras.ViewModels;
+using Plugin.Media;
 using Xamarin.Forms;
 
 namespace iLibras
 {
     public partial class UsuarioItemPage : ContentPage
     {
+        private string _base64;
+
         public UsuarioItemPage()
         {
             InitializeComponent();
             this.BindingContext = new LoginItemViewModel();
             pckEstado.ItemsSource = App.DatabaseEstado.GetItemsString();
+            pckEstado.SelectedItem = "Santa Catarina";
+        }
+
+        public UsuarioItemPage(Usuario user)
+        {
+            InitializeComponent();
+            this.BindingContext = new LoginItemViewModel();
+            pckEstado.ItemsSource = App.DatabaseEstado.GetItemsString();
+
+            etySenha.IsVisible = false;
+            etyConfirmarSenha.IsVisible = false;
+            lblSenha.IsVisible = false;
+            lblConfirmarSenha.IsVisible = false;
+            pckEstado.SelectedItem = App.DatabaseEstado.GetItem(user.Estado).Extenso;
         }
 
         void Handle_Appearing(object sender, System.EventArgs e)
         {
             RegistrarMensageria();
+
+            imgUsuario.GestureRecognizers.Add(new TapGestureRecognizer
+            {
+                Command = new Command(() => OnChooseImagem())
+            });
+        }
+
+        async void OnChooseImagem(){
+            await CrossMedia.Current.Initialize();
+
+            if (!CrossMedia.Current.IsPickPhotoSupported)
+            {
+                return;
+            }
+
+            var file = await CrossMedia.Current.PickPhotoAsync();
+
+            if (file == null) return;
+
+            _base64 = Convert.ToBase64String(File.ReadAllBytes(file.Path));
+
+            imgUsuario.Source = ImageSource.FromStream(() =>
+            {
+                var stream = file.GetStream();
+                file.Dispose();
+                return stream;
+            });
         }
 
         void Handle_Disappearing(object sender, System.EventArgs e)
@@ -109,7 +154,8 @@ namespace iLibras
                 Estado = App.DatabaseEstado.GetItem(pckEstado.SelectedItem.ToString()).Codigo,
                 Perfil = App.DatabasePerfil.GetItem("Comunicador").Codigo,
                 Senha = etySenha.Text,
-                DataNascimento = pckData.Date
+                DataNascimento = pckData.Date,
+                Imagem = _base64
             };
 
             return usuario;

@@ -3,7 +3,7 @@
     xmlns="http://xamarin.com/schemas/2014/forms" 
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
     x:Class="iLibras.UsuarioItemPage"
-    Title="Usuario"
+    Title="Novo Usuário"
     Padding="10"
     Appearing="Handle_Appearing"
     Disappearing="Handle_Disappearing">
@@ -16,19 +16,26 @@
             </ToolbarItem.Icon>
         </ToolbarItem>
     </ContentPage.ToolbarItems>
-    
-    <StackLayout>
-        <Label Text="Email:*"/>
-        <Entry x:Name="etyEmail" Placeholder="Email" Text="{Binding Email}" Keyboard="Email"/>
-        <Label Text="Senha:*"/>
-        <Entry x:Name="etySenha" Placeholder="Senha" Text="{Binding Senha}" IsPassword="true"/>
-        <Label Text="Confirmar senha:*"/>
-        <Entry x:Name="etyConfirmarSenha" Placeholder="Confirmar senha" Text="{Binding Senha}" IsPassword="true"/>
-        <Label Text="Nome:*"/>
-        <Entry x:Name="etyNome" Placeholder="Nome" Text="{Binding Nome}"/>
-        <Label Text="Data nascimento:*"/>
-        <DatePicker x:Name="pckData" Format="dd/MM/yyyy"/>
-        <Label Text="Estado:*"/>
-        <Picker x:Name="pckEstado" Title="Estado" />
-    </StackLayout>
+
+    <ScrollView>
+        <StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Image x:Name="imgUsuario" Source="img128.png" HeightRequest="70" WidthRequest="70"/>
+                <StackLayout HorizontalOptions="FillAndExpand" Orientation="Vertical" Margin="15,0,0,0">
+                    <Label Text="Nome:*"/>
+                    <Entry x:Name="etyNome" Placeholder="Nome" Text="{Binding Nome}"/>        
+                </StackLayout>
+            </StackLayout>
+            <Label Text="Email:*"/>
+            <Entry x:Name="etyEmail" Placeholder="Email" Text="{Binding Email}" Keyboard="Email"/>
+            <Label x:Name="lblSenha" Text="Senha:*"/>
+            <Entry x:Name="etySenha" Placeholder="Senha" Text="{Binding Senha}" IsPassword="true"/>
+            <Label x:Name="lblConfirmarSenha" Text="Confirmar senha:*"/>
+            <Entry x:Name="etyConfirmarSenha" Placeholder="Confirmar senha" IsPassword="true"/>
+            <Label Text="Data nascimento:*"/>
+            <DatePicker x:Name="pckData" Format="dd/MM/yyyy"/>
+            <Label Text="Estado:*"/>
+            <Picker x:Name="pckEstado" Title="Estado"/>
+        </StackLayout>
+    </ScrollView>
 </ContentPage>

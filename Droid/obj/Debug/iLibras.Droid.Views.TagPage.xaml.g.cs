@@ -11,7 +11,7 @@
 namespace iLibras {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/freitas/Documents/GitHub/ProjetoiLibras2/iLibras/Views/TagPage.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/freitas/Documents/GitHub/ProjetoiLibras/iLibras/Views/TagPage.xaml")]
     public partial class TagPage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

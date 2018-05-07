@@ -22,6 +22,11 @@ namespace iLibras
             {
                 Command = new Command(() => OnLabelClicked())
             });
+
+            masterPage.UsuarioLabel.GestureRecognizers.Add(new TapGestureRecognizer
+            {
+                Command = new Command(() => OnUsuarioClicked())
+            });
         }
 
         void OnLabelClicked()
@@ -33,6 +38,21 @@ namespace iLibras
             masterPage.ListViewComunicador.SelectedItem = null;
             masterPage.ListViewCoordenador.SelectedItem = null;
             IsPresented = false;
+        }
+
+        void OnUsuarioClicked()
+        {
+            var sessao = App.DatabaseSessao.GetItem();
+            
+            if(!((sessao.CodigoUsuario == 999999 || sessao.CodigoUsuario == -1) && App.User == null)){
+                Detail = new NavigationPage(new UsuarioItemPage(App.User));
+                ((NavigationPage)Detail).BarBackgroundColor = Color.FromHex("#1577d2");
+                masterPage.ListView.SelectedItem = null;
+                masterPage.ListViewCooperador.SelectedItem = null;
+                masterPage.ListViewComunicador.SelectedItem = null;
+                masterPage.ListViewCoordenador.SelectedItem = null;
+                IsPresented = false;
+            }
         }
 
         void OnItemSelected(object sender, SelectedItemChangedEventArgs e)

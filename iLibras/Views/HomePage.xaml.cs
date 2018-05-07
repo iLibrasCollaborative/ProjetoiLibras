@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-
+using iLibras.Models;
+using iLibras.ViewModels;
 using Xamarin.Forms;
 
 namespace iLibras
@@ -10,11 +11,32 @@ namespace iLibras
         public HomePage()
         {
             InitializeComponent();
+            this.BindingContext = new HomeViewModel();
+        }
+
+        void Handle_Appearing(object sender, System.EventArgs e)
+        {
+            RegistrarMensageria();
+        }
+
+        private void RegistrarMensageria()
+        {
+            MessagingCenter.Subscribe<HomeViewModel>(this.BindingContext,
+                                                     "NovoTermoCommand", async (sender) =>
+            {
+                await Navigation.PushAsync(new StepOnePage());
+            });
+        }
+
+        void Handle_Disappearing(object sender, System.EventArgs e)
+        {
+            MessagingCenter.Unsubscribe<HomeViewModel>(this.BindingContext,
+                                                   "NovoTermoCommand");
         }
 
         void Handle_Clicked(object sender, System.EventArgs e)
         {
-            throw new NotImplementedException();
+            
         }
 
         public HomePage(int index){

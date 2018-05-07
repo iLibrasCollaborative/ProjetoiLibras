@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="iLibras.SteepThreePage"
+    Title="Imagem Representativa"
+    Padding="10">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="✓" Clicked="Next_Clicked">
+            <ToolbarItem.Icon>
+                <OnPlatform x:TypeArguments="FileImageSource">
+                    <On Platform="Android" Value="next48.png" />
+                </OnPlatform>
+            </ToolbarItem.Icon>
+        </ToolbarItem>
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <StackLayout>
+            <Image x:Name="imgIR" Source="img256.png" WidthRequest="256" HeightRequest="256"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

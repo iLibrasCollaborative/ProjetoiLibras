@@ -17,7 +17,7 @@
     </ContentPage.ToolbarItems>
     
     <StackLayout>
-        <ListView x:Name="listView" Margin="20" SelectedItem="{Binding SelectedItem, Mode=TwoWay}">
+        <ListView x:Name="listView" Margin="20" Footer="" SelectedItem="{Binding SelectedItem, Mode=TwoWay}">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>

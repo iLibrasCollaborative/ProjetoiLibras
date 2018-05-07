@@ -4,61 +4,68 @@
             xmlns:fab="clr-namespace:Refractored.FabControl;assembly=Refractored.FabControl"
             x:Class="iLibras.HomePage"
             Title="iLibras"
-            BarBackgroundColor="White">
-    <ContentPage Icon="icongif.png" x:Name="gifPage">
+            BarBackgroundColor="White" 
+            BarTextColor="Black"
+            Appearing="Handle_Appearing"
+            Disappearing="Handle_Disappearing">
+    <ContentPage Icon="icongif.png" x:Name="gifPage" Title="Libras">
         <StackLayout>
             <SearchBar Placeholder="Pesquisar GIF em libras"/>
             <fab:FloatingActionButtonView
-                ImageName="plus_fab.png"
+                ImageName="plus48.png"
                 ColorNormal="#ff4d4d"
                 ColorRipple="Red"
                 HorizontalOptions="EndAndExpand"
                 VerticalOptions="EndAndExpand"
                 IsVisible="true"
                 AbsoluteLayout.LayoutFlags="PositionProportional"
-                AbsoluteLayout.LayoutBounds="1, 1, AutoSize, AutoSize"/>
+                AbsoluteLayout.LayoutBounds="1, 1, AutoSize, AutoSize"
+                Command="{Binding NovoTermoCommand}"/>
         </StackLayout>
     </ContentPage>
-    <ContentPage Icon="iconcontexto.png" x:Name="contextPage">
+    <ContentPage Icon="iconcontexto.png" x:Name="contextPage" Title="Contexto">
         <StackLayout>
             <SearchBar Placeholder="Pesquisar contexto do termo"/>
             <fab:FloatingActionButtonView
-                ImageName="plus_fab.png"
+                ImageName="plus48.png"
                 ColorNormal="#ff4d4d"
                 ColorRipple="Red"
                 HorizontalOptions="EndAndExpand"
                 VerticalOptions="EndAndExpand"
                 IsVisible="true"
                 AbsoluteLayout.LayoutFlags="PositionProportional"
-                AbsoluteLayout.LayoutBounds="1, 1, AutoSize, AutoSize"/>
+                AbsoluteLayout.LayoutBounds="1, 1, AutoSize, AutoSize"
+                Command="{Binding NovoTermoCommand}"/>
         </StackLayout>
     </ContentPage>
-    <ContentPage Icon="iconimg.png" x:Name="imgPage">
+    <ContentPage Icon="iconimg.png" x:Name="imgPage" Title="Imagem">
         <StackLayout>
             <SearchBar Placeholder="Pesquisar imagem representativa"/>
             <fab:FloatingActionButtonView
-                ImageName="plus_fab.png"
+                ImageName="plus48.png"
                 ColorNormal="#ff4d4d"
                 ColorRipple="Red"
                 HorizontalOptions="EndAndExpand"
                 VerticalOptions="EndAndExpand"
                 IsVisible="true"
                 AbsoluteLayout.LayoutFlags="PositionProportional"
-                AbsoluteLayout.LayoutBounds="1, 1, AutoSize, AutoSize"/>
+                AbsoluteLayout.LayoutBounds="1, 1, AutoSize, AutoSize"
+                Command="{Binding NovoTermoCommand}"/>
         </StackLayout>
     </ContentPage>
-    <ContentPage Icon="iconescritasinais.png" x:Name="sinalPage">
+    <ContentPage Icon="iconescritasinais.png" x:Name="sinalPage" Title="Escrita">
         <StackLayout>
             <SearchBar Placeholder="Pesquisar escrita de sinais"/>
             <fab:FloatingActionButtonView
-                ImageName="plus_fab.png"
+                ImageName="plus48.png"
                 ColorNormal="#ff4d4d"
                 ColorRipple="Red"
                 HorizontalOptions="EndAndExpand"
                 VerticalOptions="EndAndExpand"
                 IsVisible="true"
                 AbsoluteLayout.LayoutFlags="PositionProportional"
-                AbsoluteLayout.LayoutBounds="1, 1, AutoSize, AutoSize"/>
+                AbsoluteLayout.LayoutBounds="1, 1, AutoSize, AutoSize"
+                Command="{Binding NovoTermoCommand}"/>
         </StackLayout>
     </ContentPage>
 </TabbedPage >

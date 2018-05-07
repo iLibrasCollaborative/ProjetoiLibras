@@ -8,7 +8,7 @@
     <StackLayout>
         <StackLayout BackgroundColor="#1577d2" Orientation="Vertical" Padding="10, 0, 10, 10"> 
             <StackLayout HorizontalOptions="Start">
-                <Image Source="user48.png"/>
+                <Image Source="user48.png" x:Name="imgUser" WidthRequest="48" HeightRequest="48"/>
             </StackLayout>
             <StackLayout Orientation="Horizontal" VerticalOptions="Center">
                 <StackLayout HorizontalOptions="StartAndExpand">
@@ -61,29 +61,35 @@
                         TargetType="{x:Type local:NivelPerfilPage}" 
                         Background="White"/>
                     <local:MasterPageItem
-                        Title="Categoria" 
+                        Title="Categoria"
+                        IconSource="iconcategoria.png"
                         TargetType="{x:Type local:CategoriaPage}" 
                         Background="White"/>
                     <local:MasterPageItem
                         Title="Tag"
+                        IconSource="icontag.png"
                         TargetType="{x:Type local:TagPage}" 
                         Background="White"/>
                     <local:MasterPageItem
                         Title="Regionalismo"
+                        IconSource="iconregionalismo.png"
                         TargetType="{x:Type local:RegionalismoPage}" 
                         Background="White"/>
                     <local:MasterPageItem 
                         Title="Enviar iLibras" 
+                        IconSource="iconenviar.png"
                         TargetType="{x:Type local:HomePage}" 
                         Background="White"
                         Acao="receber"/>
                     <local:MasterPageItem 
                         Title="Receber iLibras" 
+                        IconSource="iconreceber.png"
                         TargetType="{x:Type local:HomePage}" 
                         Background="White"
                         Acao="enviar"/>
                     <local:MasterPageItem 
-                        Title="Sair" 
+                        Title="Sair"
+                        IconSource="iconsair.png"
                         TargetType="{x:Type local:HomePage}" 
                         Background="White"
                         Acao="sair"/>
@@ -98,7 +104,7 @@
                                 <ColumnDefinition Width="*" />
                             </Grid.ColumnDefinitions>
                             <Image Source="{Binding IconSource}" />
-                            <Label Grid.Column="1" Text="{Binding Title}" />
+                            <Label Grid.Column="1" Text="{Binding Title}" VerticalTextAlignment="Center" />
                         </Grid>
                     </ViewCell>
                 </DataTemplate>
@@ -147,28 +153,34 @@
                         Background="White"/>
                     <local:MasterPageItem
                         Title="Categoria" 
+                        IconSource="iconcategoria.png"
                         TargetType="{x:Type local:CategoriaPage}" 
                         Background="White"/>
                     <local:MasterPageItem
                         Title="Tag"
+                        IconSource="icontag.png"
                         TargetType="{x:Type local:TagPage}" 
                         Background="White"/>
                     <local:MasterPageItem
                         Title="Regionalismo"
+                        IconSource="iconregionalismo.png"
                         TargetType="{x:Type local:RegionalismoPage}" 
                         Background="White"/>
                     <local:MasterPageItem 
                         Title="Enviar iLibras" 
+                        IconSource="iconenviar.png"
                         TargetType="{x:Type local:HomePage}" 
                         Background="White"
                         Acao="receber"/>
                     <local:MasterPageItem 
                         Title="Receber iLibras" 
+                        IconSource="iconreceber.png"
                         TargetType="{x:Type local:HomePage}" 
                         Background="White"
                         Acao="enviar"/>
                     <local:MasterPageItem 
                         Title="Sair" 
+                        IconSource="iconsair.png"
                         TargetType="{x:Type local:HomePage}" 
                         Background="White"
                         Acao="sair"/>
@@ -183,7 +195,7 @@
                                 <ColumnDefinition Width="*" />
                             </Grid.ColumnDefinitions>
                             <Image Source="{Binding IconSource}" />
-                            <Label Grid.Column="1" Text="{Binding Title}" />
+                            <Label Grid.Column="1" Text="{Binding Title}" VerticalTextAlignment="Center"/>
                         </Grid>
                     </ViewCell>
                 </DataTemplate>
@@ -228,20 +240,24 @@
                         Background="White"/>
                     <local:MasterPageItem
                         Title="Regionalismo"
+                        IconSource="iconregionalismo.png"
                         TargetType="{x:Type local:RegionalismoPage}" 
                         Background="White"/>
                     <local:MasterPageItem 
                         Title="Enviar iLibras" 
+                        IconSource="iconenviar.png"
                         TargetType="{x:Type local:HomePage}" 
                         Background="White"
                         Acao="receber"/>
                     <local:MasterPageItem 
                         Title="Receber iLibras" 
+                        IconSource="iconreceber.png"
                         TargetType="{x:Type local:HomePage}" 
                         Background="White"
                         Acao="enviar"/>
                     <local:MasterPageItem 
                         Title="Sair" 
+                        IconSource="iconsair.png"
                         TargetType="{x:Type local:HomePage}" 
                         Background="White"
                         Acao="sair"/>
@@ -256,7 +272,7 @@
                                 <ColumnDefinition Width="*" />
                             </Grid.ColumnDefinitions>
                             <Image Source="{Binding IconSource}" />
-                            <Label Grid.Column="1" Text="{Binding Title}" />
+                            <Label Grid.Column="1" Text="{Binding Title}" VerticalTextAlignment="Center"/>
                         </Grid>
                     </ViewCell>
                 </DataTemplate>
@@ -305,28 +321,34 @@
                         Background="White"/>
                     <local:MasterPageItem
                         Title="Categoria" 
+                        IconSource="iconcategoria.png"
                         TargetType="{x:Type local:CategoriaPage}" 
                         Background="White"/>
                     <local:MasterPageItem
                         Title="Tag"
+                        IconSource="icontag.png"
                         TargetType="{x:Type local:TagPage}" 
                         Background="White"/>
                     <local:MasterPageItem
                         Title="Regionalismo"
+                        IconSource="iconregionalismo.png"
                         TargetType="{x:Type local:RegionalismoPage}" 
                         Background="White"/>
                     <local:MasterPageItem 
                         Title="Enviar iLibras" 
+                        IconSource="iconenviar.png"
                         TargetType="{x:Type local:HomePage}" 
                         Background="White"
                         Acao="receber"/>
                     <local:MasterPageItem 
                         Title="Receber iLibras" 
+                        IconSource="iconreceber.png"
                         TargetType="{x:Type local:HomePage}" 
                         Background="White"
                         Acao="enviar"/>
                     <local:MasterPageItem 
                         Title="Sair" 
+                        IconSource="iconsair.png"
                         TargetType="{x:Type local:HomePage}" 
                         Background="White"
                         Acao="sair"/>
@@ -341,7 +363,7 @@
                                 <ColumnDefinition Width="*" />
                             </Grid.ColumnDefinitions>
                             <Image Source="{Binding IconSource}" />
-                            <Label Grid.Column="1" Text="{Binding Title}" />
+                            <Label Grid.Column="1" Text="{Binding Title}" VerticalTextAlignment="Center"/>
                         </Grid>
                     </ViewCell>
                 </DataTemplate>

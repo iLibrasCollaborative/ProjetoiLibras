@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="iLibras.StepTwoPage"
+    Title="Contexto"
+    Padding="10">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="✓" Clicked="Next_Clicked">
+            <ToolbarItem.Icon>
+                <OnPlatform x:TypeArguments="FileImageSource">
+                    <On Platform="Android" Value="next48.png" />
+                </OnPlatform>
+            </ToolbarItem.Icon>
+        </ToolbarItem>
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Descrição:*"/>
+            <Entry x:Name="etyDescricao" Placeholder="Descrição"/>
+            <Label Text="Contexto:*"/>
+            <Entry x:Name="etyContexto" Placeholder="Contexto"/>
+            <Label Text="Tag:"/>
+            <Picker x:Name="pckTag" Title="Tag"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

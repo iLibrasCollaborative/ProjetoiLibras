@@ -7,11 +7,12 @@ namespace iLibras.Models
     {
         [PrimaryKey, AutoIncrement]
         public int Codigo { get; set; }
-        public String Email { get; set; }
-        public String Senha { get; set; }
-        public String Nome { get; set; }
+        public string Email { get; set; }
+        public string Senha { get; set; }
+        public string Nome { get; set; }
         public DateTime DataNascimento { get; set; }
         public int Perfil { get; set; }
         public int Estado { get; set; }
+        public string Imagem { get; set; } 
     }
 }

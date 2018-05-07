@@ -4,7 +4,8 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
     x:Class="iLibras.LoginPage"
     Title="Login"
-    Appearing="Handle_Appearing">
+    Appearing="Handle_Appearing"
+    Disappearing="Handle_Disappearing">
     <StackLayout HorizontalOptions="Center">
         <Image Source="logo150.png" HorizontalOptions="Center" VerticalOptions="Start"/>
         <StackLayout VerticalOptions="StartAndExpand">
@@ -13,7 +14,7 @@
             <StackLayout Orientation="Horizontal">
                 <Entry x:Name="etySenha" IsPassword="true" Placeholder="Senha" 
                        MinimumWidthRequest="200" WidthRequest="220"/>
-                <Image Source="eye24.png" HorizontalOptions="End" VerticalOptions="Center">
+                <Image Source="eye24.png" WidthRequest="24" HeightRequest="24" HorizontalOptions="End" VerticalOptions="Center">
                     <Image.GestureRecognizers>
                         <TapGestureRecognizer Tapped="Handle_Tapped" NumberOfTapsRequired="1" />
                     </Image.GestureRecognizers>

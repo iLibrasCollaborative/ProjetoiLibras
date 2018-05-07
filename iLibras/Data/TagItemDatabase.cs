@@ -26,6 +26,21 @@ namespace iLibras.Data
             return database.Table<Tag>().Where(i => i.Codigo == codigo).FirstOrDefaultAsync().Result;
         }
 
+        public Tag GetItemAsync(string descricao)
+        {
+            return database.Table<Tag>().Where(i => i.Descricao == descricao).FirstOrDefaultAsync().Result;
+        }
+
+        public List<string> GetItemsAtDescricao(){
+            var tags = database.Table<Tag>().ToListAsync().Result;
+            var lista = new List<string>();
+
+            foreach(var tag in tags)
+                lista.Add(tag.Descricao);
+
+            return lista;
+        }
+
         public bool IsUsingCategoria(int codigo){
 
 

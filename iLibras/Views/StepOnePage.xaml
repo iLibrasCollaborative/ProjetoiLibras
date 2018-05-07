@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="iLibras.StepOnePage"
+    Title="Sinal"
+    Padding="10">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="✓" Clicked="Next_Clicked" Command="{Binding NextStepCommand}">
+            <ToolbarItem.Icon>
+                <OnPlatform x:TypeArguments="FileImageSource">
+                    <On Platform="Android" Value="next48.png" />
+                </OnPlatform>
+            </ToolbarItem.Icon>
+        </ToolbarItem>
+    </ContentPage.ToolbarItems>
+    
+    <ContentPage.Content>
+        <StackLayout>
+            <Image x:Name="imgSinal" Source="img256.png" HeightRequest="256" WidthRequest="256" HorizontalOptions="Center"/>
+            <Label Text="Regionalismo:"/>
+            <Picker x:Name="pckEstado" Title="Regionalismo"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

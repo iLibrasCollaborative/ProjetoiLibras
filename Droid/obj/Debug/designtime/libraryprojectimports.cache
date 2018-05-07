@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Paths>
   <Jars>
+    <Jar>obj/Debug/lp/1/jl/formsviewgroup.jar</Jar>
     <Jar>/Users/freitas/Documents/GitHub/ProjetoiLibras/Droid/obj/Debug/lp/1/jl/formsviewgroup.jar</Jar>
     <Jar>/Users/freitas/Documents/GitHub/ProjetoiLibras/Droid/obj/Debug/lp/10/jl/bin/classes.jar</Jar>
     <Jar>/Users/freitas/Documents/GitHub/ProjetoiLibras/Droid/obj/Debug/lp/11/jl/bin/classes.jar</Jar>
@@ -20,7 +21,6 @@
     <Jar>/Users/freitas/Documents/GitHub/ProjetoiLibras/Droid/obj/Debug/lp/9/jl/bin/classes.jar</Jar>
   </Jars>
   <ResolvedResourceDirectories>
-    <ResolvedResourceDirectory>/Users/freitas/Documents/GitHub/ProjetoiLibras/Droid/obj/Debug/lp/4/jl/res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>/Users/freitas/Documents/GitHub/ProjetoiLibras/Droid/obj/Debug/lp/35/jl/res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>/Users/freitas/Documents/GitHub/ProjetoiLibras/Droid/obj/Debug/lp/40/jl/res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>/Users/freitas/Documents/GitHub/ProjetoiLibras/Droid/obj/Debug/lp/42/jl/res</ResolvedResourceDirectory>
@@ -38,7 +38,6 @@
     <ResolvedResourceDirectory>/Users/freitas/Documents/GitHub/ProjetoiLibras/Droid/obj/Debug/lp/19/jl/res</ResolvedResourceDirectory>
   </ResolvedResourceDirectories>
   <ResolvedAssetDirectories>
-    <ResolvedAssetDirectory>obj/Debug/lp/4/jl/assets</ResolvedAssetDirectory>
     <ResolvedAssetDirectory>obj/Debug/lp/35/jl/assets</ResolvedAssetDirectory>
     <ResolvedAssetDirectory>obj/Debug/lp/40/jl/assets</ResolvedAssetDirectory>
     <ResolvedAssetDirectory>obj/Debug/lp/42/jl/assets</ResolvedAssetDirectory>
@@ -51,7 +50,6 @@
   </ResolvedAssetDirectories>
   <ResolvedEnvironmentFiles />
   <ResolvedResourceDirectoryStamps>
-    <ResolvedResourceDirectoryStamp>/Users/freitas/Documents/GitHub/ProjetoiLibras/Droid/obj/Debug/lp/4.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>/Users/freitas/Documents/GitHub/ProjetoiLibras/Droid/obj/Debug/lp/35.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>/Users/freitas/Documents/GitHub/ProjetoiLibras/Droid/obj/Debug/lp/40.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>/Users/freitas/Documents/GitHub/ProjetoiLibras/Droid/obj/Debug/lp/42.stamp</ResolvedResourceDirectoryStamp>

@@ -78,6 +78,28 @@
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\LoginItemViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\PasswordOptions.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\Email.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\HomeViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Termo.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Sinal.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\StepOnePage.xaml.cs">
+      <DependentUpon>StepOnePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\StepTwoPage.xaml.cs">
+      <DependentUpon>StepTwoPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\SteepThreePage.xaml.cs">
+      <DependentUpon>SteepThreePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\StepFourPage.xaml.cs">
+      <DependentUpon>StepFourPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Contexto.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\ImagemRepresentativa.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\EscritaSinais.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\SinalItemDatabase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\ImagemRepresentativaItemDatabase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\EscritaSinaisItemDatabase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\ContextoItemDatabase.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\HomePage.xaml">
@@ -137,6 +159,22 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\NivelPerfilItemPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\StepOnePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\StepTwoPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\SteepThreePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\StepFourPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>

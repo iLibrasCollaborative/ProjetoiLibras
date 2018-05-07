@@ -12,19 +12,27 @@ namespace iLibras.Models
         
         public static bool SendEmail(Email email){
             try {
-                SmtpClient client = new SmtpClient("smtp.gmail.com");
-                client.UseDefaultCredentials = false;
-                client.Credentials = new NetworkCredential("ilibrascollaborative@gmail.com", "Si261483@Si261483");
+                var fromAddress = new MailAddress("ilibrascollaborative@gmail.com", "iLibras Collaborative");
+                var toAddress = new MailAddress(email.To, email.To);
 
-                MailMessage mailMessage = new MailMessage();
-                mailMessage.From = new MailAddress("ilibrascollaborative@gmail.com");
-                mailMessage.To.Add(email.To);
-
-
-                mailMessage.Body = email.Body;
-                mailMessage.Subject = email.Subject;
-                client.Send(mailMessage);   
-            } catch(Exception ex) {
+                var smtp = new SmtpClient
+                {
+                    Host = "smtp.gmail.com",
+                    Port = 587,
+                    EnableSsl = true,
+                    DeliveryMethod = SmtpDeliveryMethod.Network,
+                    UseDefaultCredentials = false,
+                    Credentials = new NetworkCredential(fromAddress.Address, "Si261483@Si261483")
+                };
+                using (var message = new MailMessage(fromAddress, toAddress)
+                {
+                    Subject = email.Subject,
+                    Body = email.Body
+                })
+                {
+                    smtp.Send(message);
+                }    
+            } catch(Exception ex){
                 Console.WriteLine(ex.ToString());
                 return false;
             }

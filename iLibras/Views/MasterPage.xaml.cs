@@ -13,6 +13,7 @@ namespace iLibras
         public ListView ListViewCooperador { get { return listViewCooperador; } }
         public Label Label { get { return lblLogin; } }
         public Label UsuarioLabel { get { return lblUsuario; } }
+        public Image ImagemUsuario { get { return imgUser; } } 
 
         public MasterPage()
         {

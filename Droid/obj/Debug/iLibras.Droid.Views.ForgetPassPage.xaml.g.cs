@@ -11,8 +11,7 @@
 namespace iLibras {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/freitas/Documents/GitHub/ProjetoiLibras2/iLibras/Views/ForgetPassPage.xaml" +
-        "")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/freitas/Documents/GitHub/ProjetoiLibras/iLibras/Views/ForgetPassPage.xaml")]
     public partial class ForgetPassPage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

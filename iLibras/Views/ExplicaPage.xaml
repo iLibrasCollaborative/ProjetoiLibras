@@ -6,23 +6,45 @@
     Title="iLibras Explica"
     Padding="10">
     <ContentPage.Content>
-        <StackLayout>
-            <StackLayout Orientation="Horizontal">
-                <Image Source="icongif.png" HorizontalOptions="Start"/>
-                <Label Text="Digite o termo a ser pesquisado para obter o resultado correspondente em Libras" HorizontalOptions="StartAndExpand"/>
+        <ScrollView>
+            <StackLayout>                
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="icongif.png" HorizontalOptions="Start"/>
+                    <Label Text="Digite o termo a ser pesquisado para obter o resultado correspondente em Libras" HorizontalOptions="StartAndExpand"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="iconcontexto.png" HorizontalOptions="Start"/>
+                    <Label Text="Digite o termo a ser pesquisado para obter o resultado correspondente do contexto" HorizontalOptions="StartAndExpand"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="iconimg.png" HorizontalOptions="Start"/>
+                    <Label Text="Digite o termo a ser pesquisado para obter o resultado correspondente da imagem representativa do termo" HorizontalOptions="StartAndExpand"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="iconescritasinais.png" HorizontalOptions="Start"/>
+                    <Label Text="Digite o termo a ser pesquisado para obter o resultado correspondente da escrita de sinais" HorizontalOptions="StartAndExpand"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="iconregionalismo.png" HorizontalOptions="Start"/>
+                    <Label Text="Escolha o estado do regionalismo desejado" HorizontalOptions="StartAndExpand"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="iconcategoria.png" HorizontalOptions="Start"/>
+                    <Label Text="Informe a categoria para que você pode diferenciar sinais que tenham nomes iguais com significados diferentes" HorizontalOptions="StartAndExpand"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="icontag.png" HorizontalOptions="Start"/>
+                    <Label Text="Informe a Tag para que você tenha etiquetas vinculadas as categorias" HorizontalOptions="StartAndExpand"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="iconreceber.png" HorizontalOptions="Start"/>
+                    <Label Text="Escolha essa opção para receber os sinais do iLibras Collaborative" HorizontalOptions="StartAndExpand"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="iconenviar.png" HorizontalOptions="Start"/>
+                    <Label Text="Escolha essa opção para enviar os seus sinais para o iLibras Collaborative, colaborando com a comunidade" HorizontalOptions="StartAndExpand"/>
+                </StackLayout>
             </StackLayout>
-            <StackLayout Orientation="Horizontal">
-                <Image Source="iconcontexto.png" HorizontalOptions="Start"/>
-                <Label Text="Digite o termo a ser pesquisado para obter o resultado correspondente do contexto" HorizontalOptions="StartAndExpand"/>
-            </StackLayout>
-            <StackLayout Orientation="Horizontal">
-                <Image Source="iconimg.png" HorizontalOptions="Start"/>
-                <Label Text="Digite o termo a ser pesquisado para obter o resultado correspondente da imagem representativa do termo" HorizontalOptions="StartAndExpand"/>
-            </StackLayout>
-            <StackLayout Orientation="Horizontal">
-                <Image Source="iconescritasinais.png" HorizontalOptions="Start"/>
-                <Label Text="Digite o termo a ser pesquisado para obter o resultado correspondente da escrita de sinais" HorizontalOptions="StartAndExpand"/>
-            </StackLayout>
-        </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>
