@@ -18,7 +18,7 @@ namespace iLibras
         }
 
         public bool CamposObrigatorios(){
-            if (string.IsNullOrWhiteSpace(etyContexto.Text))
+            if (string.IsNullOrWhiteSpace(edtContexto.Text))
                 return false;
 
             if (string.IsNullOrWhiteSpace(etyDescricao.Text))
@@ -38,7 +38,7 @@ namespace iLibras
             var contexto = new Contexto
             {
                 Descricao = etyDescricao.Text,
-                ContextoTexto = etyContexto.Text,
+                ContextoTexto = edtContexto.Text,
                 CodigoTag = pckTag.SelectedItem != null ? 
                                   App.DatabaseTag.GetItemAsync(pckTag.SelectedItem.ToString()).Codigo : 0 
             };

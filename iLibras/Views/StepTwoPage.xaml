@@ -19,7 +19,7 @@
             <Label Text="Descrição:*"/>
             <Entry x:Name="etyDescricao" Placeholder="Descrição"/>
             <Label Text="Contexto:*"/>
-            <Entry x:Name="etyContexto" Placeholder="Contexto"/>
+            <Editor x:Name="edtContexto"/>
             <Label Text="Tag:"/>
             <Picker x:Name="pckTag" Title="Tag"/>
         </StackLayout>

@@ -38,3 +38,6 @@ Plugin.Media.Abstractions
 Plugin.Media
 Plugin.Permissions.Abstractions
 Plugin.Permissions
+Refractored.Fab
+Refractored.FabControl
+Refractored.FabControl.Droid

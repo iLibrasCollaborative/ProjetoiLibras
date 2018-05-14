@@ -1,18 +1,16 @@
 ﻿<Properties StartupConfiguration="{18F00B0D-B584-4295-8AE1-B31A44ABDAB0}|Default">
   <MonoDevelop.Ide.ItemProperties.iLibras.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.12D44F12-0421-494A-A1C8-39447A1ACED8" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="iLibras/Views/UsuarioItemPage.xaml.cs">
+  <MonoDevelop.Ide.Workbench>
     <Files>
-      <File FileName="iLibras/Views/MasterPage.xaml" Line="351" Column="50" />
-      <File FileName="iLibras/Views/StepOnePage.xaml.cs" Line="36" Column="14" />
-      <File FileName="iLibras/Views/LoginPage.xaml" Line="22" Column="27" />
-      <File FileName="iLibras/Views/MainPage.xaml.cs" Line="97" Column="32" />
-      <File FileName="iLibras/Views/UsuarioItemPage.xaml" Line="38" Column="54" />
-      <File FileName="iLibras/Views/UsuarioItemPage.xaml.cs" Line="34" Column="86" />
+      <File FileName="iLibras/Views/HomePage.xaml" Line="42" Column="57" />
+      <File FileName="iLibras/Views/HomePage.xaml.cs" Line="76" Column="19" />
     </Files>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/freitas/Documents/GitHub/ProjetoiLibras/iLibras/Views/StepFourPage.xaml.cs" relfile="iLibras/Views/StepFourPage.xaml.cs" line="90" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.iLibras.Droid PreferredExecutionTarget="Android.0036008590" />

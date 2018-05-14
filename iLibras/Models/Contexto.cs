@@ -10,5 +10,6 @@ namespace iLibras.Models
         public string Descricao { get; set; }
         public string ContextoTexto { get; set; }
         public int CodigoTag { get; set; }
+        public int CodigoSinal { get; set; }
     }
 }

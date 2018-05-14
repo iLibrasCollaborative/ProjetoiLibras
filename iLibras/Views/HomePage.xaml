@@ -10,7 +10,9 @@
             Disappearing="Handle_Disappearing">
     <ContentPage Icon="icongif.png" x:Name="gifPage" Title="Libras">
         <StackLayout>
-            <SearchBar Placeholder="Pesquisar GIF em libras"/>
+            <SearchBar Placeholder="Pesquisar pela descrição..." SearchButtonPressed="Handle_SearchButtonPressed"/>
+            <Image x:Name="imgGif" Source="img256.png" WidthRequest="256" HeightRequest="256" 
+                   HorizontalOptions="Center" VerticalOptions="Center" IsVisible="false"/>
             <fab:FloatingActionButtonView
                 ImageName="plus48.png"
                 ColorNormal="#ff4d4d"
@@ -25,7 +27,21 @@
     </ContentPage>
     <ContentPage Icon="iconcontexto.png" x:Name="contextPage" Title="Contexto">
         <StackLayout>
-            <SearchBar Placeholder="Pesquisar contexto do termo"/>
+            <SearchBar Placeholder="Pesquisar pela descrição..." SearchButtonPressed="Handle_SearchButtonPressed"/>
+            <StackLayout x:Name="slContexto" IsVisible="false" Margin="15">
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Contexto:" FontSize="16"/>
+                    <Label x:Name="lblContexto" FontSize="16"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Descrição:" FontSize="16"/>
+                    <Label x:Name="lblDescricao" LineBreakMode="HeadTruncation" FontSize="16"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Tag:" FontSize="16"/>
+                    <Label x:Name="lblTag" FontSize="16"/>
+                </StackLayout>
+            </StackLayout>
             <fab:FloatingActionButtonView
                 ImageName="plus48.png"
                 ColorNormal="#ff4d4d"
@@ -40,7 +56,9 @@
     </ContentPage>
     <ContentPage Icon="iconimg.png" x:Name="imgPage" Title="Imagem">
         <StackLayout>
-            <SearchBar Placeholder="Pesquisar imagem representativa"/>
+            <SearchBar Placeholder="Pesquisar pela descrição..." SearchButtonPressed="Handle_SearchButtonPressed"/>
+            <Image x:Name="imgImagemRepresentativa" Source="img256.png" WidthRequest="256" HeightRequest="256" 
+                   HorizontalOptions="Center" VerticalOptions="Center" IsVisible="false"/>
             <fab:FloatingActionButtonView
                 ImageName="plus48.png"
                 ColorNormal="#ff4d4d"
@@ -55,7 +73,9 @@
     </ContentPage>
     <ContentPage Icon="iconescritasinais.png" x:Name="sinalPage" Title="Escrita">
         <StackLayout>
-            <SearchBar Placeholder="Pesquisar escrita de sinais"/>
+            <SearchBar Placeholder="Pesquisar pela descrição..." SearchButtonPressed="Handle_SearchButtonPressed"/>
+            <Image x:Name="imgEscritaSinais" Source="img256.png" WidthRequest="256" HeightRequest="256" 
+                   HorizontalOptions="Center" VerticalOptions="Center" IsVisible="false"/>
             <fab:FloatingActionButtonView
                 ImageName="plus48.png"
                 ColorNormal="#ff4d4d"

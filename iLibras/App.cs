@@ -11,13 +11,17 @@ namespace iLibras
     public partial class App : Application
     {
         public static bool UseMockDataStore = true;
-        public static string BackendUrl = "https://localhost:5000";
+        public static string BackendUrl = "https://localhost:3000";
         static CategoriaItemDatabase databaseCategoria;
         static TagItemDatabase databaseTag;
         static UsuarioItemDatabase databaseUsuario;
         static EstadoItemDatabase databaseEstado;
         static PerfilItemDatabase databasePerfil;
         static SessaoItemDatabase databaseSessao;
+        static ContextoItemDatabase databaseContexto;
+        static ImagemRepresentativaItemDatabase databaseImagemRepresentativa;
+        static SinalItemDatabase databaseSinal;
+        static EscritaSinaisItemDatabase databaseEscritaSinais;
 
         public App()
         {
@@ -87,6 +91,50 @@ namespace iLibras
                     databaseSessao = new SessaoItemDatabase(DependencyService.Get<IFileHelper>().GetLocalFilePath("iLibrasSQLite.db3"));
 
                 return databaseSessao;
+            }
+        }
+
+        public static ContextoItemDatabase DatabaseContexto
+        {
+            get
+            {
+                if (databaseContexto == null)
+                    databaseContexto = new ContextoItemDatabase(DependencyService.Get<IFileHelper>().GetLocalFilePath("iLibrasSQLite.db3"));
+
+                return databaseContexto;
+            }
+        }
+
+        public static EscritaSinaisItemDatabase DatabaseEscritaSinais
+        {
+            get
+            {
+                if (databaseEscritaSinais == null)
+                    databaseEscritaSinais = new EscritaSinaisItemDatabase(DependencyService.Get<IFileHelper>().GetLocalFilePath("iLibrasSQLite.db3"));
+
+                return databaseEscritaSinais;
+            }
+        }
+
+        public static ImagemRepresentativaItemDatabase DatabaseImagemRepresentativa
+        {
+            get
+            {
+                if (databaseImagemRepresentativa == null)
+                    databaseImagemRepresentativa = new ImagemRepresentativaItemDatabase(DependencyService.Get<IFileHelper>().GetLocalFilePath("iLibrasSQLite.db3"));
+
+                return databaseImagemRepresentativa;
+            }
+        }
+
+        public static SinalItemDatabase DatabaseSinal
+        {
+            get
+            {
+                if (databaseSinal == null)
+                    databaseSinal = new SinalItemDatabase(DependencyService.Get<IFileHelper>().GetLocalFilePath("iLibrasSQLite.db3"));
+
+                return databaseSinal;
             }
         }
 
